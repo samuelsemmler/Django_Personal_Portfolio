@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+/* Variables */
+:root {
+    --default_background_color: #24252a;
+    --default_text_color: #edf0f1;
+    --pure_orange: #ff8000;
+    --strong_orange: #ff6500;
+    --aquamarine_blue: #0088a9;
+}
+
+body {
+    background-color: var(--default_background_color);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header section start */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+header li, header a, header button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--default_text_color);
+    text-decoration: none;
+}
+
+.header_title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: var(--aquamarine_blue);
+}
+/* Header section end */
+
+
+
+/* Footer section start */
+footer a {
+    color: var(--default_text_color);
+    transition: all 0.3s ease 0s;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: var(--pure_orange);
+    /* color: var(--strong_orange); */
+    /* color: var(--aquamarine_blue); */
+}
+
+
+/* Footer section end */
