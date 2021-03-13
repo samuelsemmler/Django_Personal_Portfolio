@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@500&display=swap');
 
 /* Variables */
 :root {
+    /* Font variables */
+    --primary_font: 'Akaya Telivigala', cursive;
+    --secondary_font: 'Dancing Script', cursive;
+    --alternative_font: sans-serif;
+
+    /* Color variables */
     --default_background_color: #24252a;
     --default_text_color: #edf0f1;
     --pure_orange: #ff8000;
     --strong_orange: #ff6500;
     --aquamarine_blue: #0088a9;
+    --strong_blue: #0067a5;
 }
 
 body {
@@ -14,6 +21,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* height: 100%; */
 }
 
 /* Header section start */
@@ -25,16 +33,24 @@ header {
 }
 
 header li, header a, header button {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--primary_font), var(--secondary_font), var(--alternative_font);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 25px;
     color: var(--default_text_color);
     text-decoration: none;
 }
 
+header a {
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: var(--aquamarine_blue);
+}
+
 .header_title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .logo {
@@ -60,6 +76,48 @@ header li, header a, header button {
 /* Header section end */
 
 
+/* Home section start */
+.home_section {
+    display: block;
+    height:100%;
+    width:100%;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home_section .banner_image {
+    background-image: url("/static/images/Drone-Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home_section .banner_text {
+    font-family: var(--primary_font), var(--secondary_font), var(--alternative_font);
+    font-weight: 500;
+    font-size: 4rem;
+    text-decoration: none;
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--strong_blue);
+    transition: all 0.3s ease 0s;
+}
+
+.home_section .banner_text:hover {
+    color: var(--default_text_color);
+    cursor: pointer;
+}
+/* Home section end */
+
+
+
+
+
 
 /* Footer section start */
 footer a {
@@ -70,8 +128,6 @@ footer a {
 
 footer a:hover {
     color: var(--pure_orange);
-    /* color: var(--strong_orange); */
-    /* color: var(--aquamarine_blue); */
 }
 
 
