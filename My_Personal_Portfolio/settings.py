@@ -27,7 +27,7 @@ SECRET_KEY = sec.get_secrets()['secret_key']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '192.168.0.102', '127.0.0.1']
 
 
 # Application definition

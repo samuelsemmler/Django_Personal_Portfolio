@@ -1,5 +1,4 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,14 +13,11 @@
 <body>
     {% block body %}
 
-    <!-- Home section start -->
     <section id="home" class="home_section">
-        <div class="banner_image"></div>
-        <div class="banner_text">Hi, my name is Samuel</div>
+        <div class="responsive_div home_principal">
+            <img src="{% static 'images/Drone-Banner.jpg' %}" alt="" class="responsive">
+        </div>
     </section>
-
-    
-
     {% endblock %}
 </body>
 

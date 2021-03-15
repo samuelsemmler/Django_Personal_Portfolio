@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Dancing+Script:wght@500&family=Roboto&display=swap');
+
+/* Variables */
+:root {
+    /* Font variables */
+    --primary_font: 'Roboto', cursive;
+    --secondary_font: 'Dancing Script', cursive;
+    --alternative_font: sans-serif;
+
+    /* Color variables */
+    --default_background_color: #24252a;
+    --default_text_color: #edf0f1;
+    --pure_orange: #ff8000;
+    --strong_orange: #ff6500;
+    --aquamarine_blue: #0088a9;
+    --strong_blue: #0067a5;
+}
+
+/*=========================================================================================================*/
+body {
+    background-color: var(--default_background_color);
+}
+
+/* Footer section start */
+footer a {
+    color: var(--default_text_color);
+    transition: all 0.3s ease 0s;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: var(--pure_orange);
+}
+
+footer .footer_text {
+    font-family: var(--primary_font);
+}
+
+
+/* Footer section end */
